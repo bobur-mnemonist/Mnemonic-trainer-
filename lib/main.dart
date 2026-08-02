@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
-import 'screens/pao_trainer_screen.dart';
+import 'speed_numbers_screen.dart';
 
 void main() {
-  runApp(const PAOTrainerApp());
+  runApp(const SpeedNumbersApp());
 }
 
-class PAOTrainerApp extends StatelessWidget {
-  const PAOTrainerApp({super.key});
+class SpeedNumbersApp extends StatelessWidget {
+  const SpeedNumbersApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      title: 'PAO Mnemonic Trainer',
+      title: 'Speed Numbers Trainer',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color(0xFF1E1E2C),
       ),
-      home: const PAOTrainerScreen(),
+      home: const SpeedNumbersScreen(),
     );
   }
 }
